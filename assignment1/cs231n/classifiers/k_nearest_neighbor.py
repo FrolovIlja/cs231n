@@ -73,7 +73,8 @@ class KNearestNeighbor(object):
         # training point, and store the result in dists[i, j]. You should   #
         # not use a loop over dimension.                                    #
         #####################################################################
-        pass
+        # pass
+        dists[i, j] = np.power(np.sum(np.power(X[i]-self.X_train[j], 2)), 0.5)
         #####################################################################
         #                       END OF YOUR CODE                            #
         #####################################################################
