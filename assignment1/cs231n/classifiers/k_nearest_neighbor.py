@@ -159,7 +159,6 @@ class KNearestNeighbor(object):
       #########################################################################
       # print(np.argsort(dists[i])[:k])
       closest_y = self.y_train[np.argsort(dists[i])[:k]]
-      # print(closest_y)
       #########################################################################
       # TODO:                                                                 #
       # Now that you have found the labels of the k nearest neighbors, you    #
@@ -168,7 +167,6 @@ class KNearestNeighbor(object):
       # label.                                                                #
       #########################################################################
       y_pred[i] = np.argmax(np.bincount(closest_y))
-      # print(np.argmax(np.bincount(closest_y)))
       #########################################################################
       #                           END OF YOUR CODE                            # 
       #########################################################################
